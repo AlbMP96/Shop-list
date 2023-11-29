@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="styles.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Lista compra</h1>
+        <form id="form">
+            <input
+                type="text"
+                id="product"
+                placeholder="Introduce un producto"
+                required
+            />
+            <button type="submit" form="form" id="submit">
+                Añadir producto
+            </button>
+            <input type="text" id="filter" placeholder="Filtra productos" />
+            <div id="product-list"></div>
+            <button id="remove">Borrar todo</button>
+        </form>
+    </body>
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+</html>
